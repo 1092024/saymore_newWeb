@@ -49,6 +49,14 @@ btn1.addEventListener("click", () => {
   introduce.scrollIntoView({ behavior: "smooth" });
 });
 
+btn2.addEventListener("click", () => {
+  window.location.href = "inkdrop.html";
+});
+
 btn3.addEventListener("click", () => {
   member.scrollIntoView({ behavior: "smooth" });
+});
+
+btn4.addEventListener("click", () => {
+  window.location.href = "experience.html";
 });
