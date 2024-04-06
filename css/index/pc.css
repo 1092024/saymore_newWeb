@@ -1,0 +1,49 @@
+@media (min-width: 992px) {
+  /* saymore */
+  .txtTeam {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: white;
+    letter-spacing: 34px;
+    font-size: 46px;
+    animation: txtShine 3s infinite;
+    text-align: center;
+  }
+  /* 中文版 English */
+  .txtEnter {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: white;
+    letter-spacing: 16px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: inline-block;
+  }
+  /* 版本字樣顯示 */
+  .txtEnter.show {
+    opacity: 1; /* 将透明度逐渐改变为 1 */
+  }
+  .txtEnter span {
+    margin: 20px;
+    display: inline-block;
+  }
+  .txtEnter span:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+  .txtEnter span:not(:hover) {
+    transform: none;
+  }
+  /* 版本中間的/ */
+  #txtNone:hover {
+    cursor: default;
+    transform: none;
+  }
+}

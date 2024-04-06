@@ -1,0 +1,96 @@
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    max-width: 100vw; /* 添加最大宽度 */
+    height: auto; /* 考虑按钮高度，减去按钮的高度 */
+    overflow: hidden;
+    position: relative;
+  }
+  #gotoMenu {
+    display: none;
+  }
+
+  @keyframes txtShine {
+    0% {
+      color: black;
+      opacity: 1;
+      text-shadow: 0 0 10px rgb(113, 113, 113);
+    }
+    50% {
+      color: rgb(117, 117, 117);
+      opacity: 0.7;
+      text-shadow: 0 0 10px rgb(11, 11, 11);
+    }
+    100% {
+      color: black;
+      opacity: 1;
+      text-shadow: 0 0 10px rgb(113, 113, 113);
+    }
+  }
+  .video {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+  }
+  .button-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 如果按钮多了会自动换行 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    height: 100%;
+  }
+  .button-container button {
+    margin: 10px; /* 添加一些间距，以防止按钮过于拥挤 */
+    flex: 1 0 45%; /* 按钮占据空间的比例 */
+    max-width: calc(50% - 20px); /* 按钮最大宽度 */
+  }
+
+  .button-container {
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: wrap; /* 如果按钮多了会自动换行 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    height: auto;
+    width: 80%;
+    margin: auto;
+  }
+  .button-container button {
+    margin: 10px; /* 添加一些间距，以防止按钮过于拥挤 */
+    flex: 1 0 45%; /* 按钮占据空间的比例 */
+    max-width: calc(50% - 20px); /* 按钮最大宽度 */
+    padding: 10.7%;
+    background-size: contain; /* 缩放图像以适应按钮 */
+    background-position: center; /* 图像在按钮中居中 */
+    background-repeat: no-repeat; /* 禁止图像重复 */
+    border: none; /* 取消按钮边框 */
+    outline: none; /* 取消按钮聚焦时的边框 */
+    text-align: center;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 4px;
+    background-color: transparent;
+  }
+  #btn1 {
+    background-image: url("../../img/dot.png");
+  }
+  #btn2 {
+    background-image: url("../../img/dot.png");
+  }
+  #btn3 {
+    background-image: url("../../img/dot.png");
+  }
+  #btn4 {
+    background-image: url("../../img/dot.png");
+  }
+
+  #toTop {
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    display: none;
+  }
+
+  #toTop:hover {
+    cursor: pointer;
+  }
+}

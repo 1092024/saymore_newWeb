@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Noto Serif TC", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* chrome */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE */
+body {
+  -ms-overflow-style: none;
+}
+
+/* 作品介紹 */
+.introduce {
+  padding-top: 5%;
+  width: 80%;
+  height: 100vh;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  margin: auto;
+  letter-spacing: 14px;
+  line-height: 3em;
+}
+/* 成員介紹 */
+.member {
+  padding-top: 5%;
+  width: 80%;
+  height: 100vh;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  margin: auto;
+  letter-spacing: 14px;
+  line-height: 3em;
+}

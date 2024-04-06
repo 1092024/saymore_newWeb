@@ -1,0 +1,35 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .txtTeam {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: white;
+    letter-spacing: 16px;
+    font-size: 32px;
+    animation: txtShine 3s infinite;
+    text-align: center;
+  }
+
+  .txtEnter {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: inline-block;
+  }
+  .txtEnter.show {
+    opacity: 1; /* 将透明度逐渐改变为 1 */
+  }
+  .txtEnter span {
+    margin: 2px;
+    display: inline-block;
+  }
+}
