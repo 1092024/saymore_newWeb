@@ -94,4 +94,29 @@
   #toTop:hover {
     cursor: pointer;
   }
+  /* 作品介紹 */
+  .introduce {
+    padding-top: 5%;
+    width: 80%;
+    height: 100vh;
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: auto;
+    letter-spacing: 14px;
+    line-height: 3em;
+  }
+  /* 成員介紹 */
+  .member {
+    padding-top: 5%;
+    width: 80%;
+    height: 100vh;
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: auto;
+    letter-spacing: 14px;
+    line-height: 3em;
+  }
+  #memberPic {
+    width: 90%;
+  }
 }

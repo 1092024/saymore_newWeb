@@ -40,3 +40,6 @@ body {
   letter-spacing: 4px;
   line-height: 3em;
 }
+#memberPic {
+  width: 50%;
+}
