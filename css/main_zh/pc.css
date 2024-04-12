@@ -98,25 +98,56 @@
   .introduce {
     padding-top: 5%;
     width: 80%;
-    height: 100vh;
+    height: 100%;
     justify-content: center; /* 水平居中对齐 */
     align-items: center; /* 垂直居中对齐 */
     margin: auto;
+    font-size: 16px;
     letter-spacing: 14px;
-    line-height: 3em;
+    line-height: 5em;
   }
-  /* 成員介紹 */
+  .fistHeader {
+    text-align: center;
+    color: rgb(65, 65, 138);
+    font-weight: bold;
+  }
+  #saymoreTxt {
+    font-size: 50px;
+    display: block;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+  #saymoreSlogan {
+    font-size: 30px;
+    display: block;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  /* 非看不可 */
+  #specialTxt {
+    letter-spacing: 14px;
+    font-size: 50px;
+  }
+  #specialTxt3 {
+    padding: 0 1% 0 1%;
+    font-size: 110px;
+    color: rgb(133, 133, 133);
+  }
+  .specialInTxt {
+    padding-top: 1%;
+    letter-spacing: 14px;
+    font-size: 16px;
+  }
+  .specialInTxtH {
+    padding-top: 1%;
+    letter-spacing: 14px;
+    font-size: 30px;
+  }
+  /* 成員 */
   .member {
-    padding-top: 5%;
-    width: 80%;
-    height: 100vh;
-    justify-content: center; /* 水平居中对齐 */
-    align-items: center; /* 垂直居中对齐 */
-    margin: auto;
     letter-spacing: 14px;
-    line-height: 3em;
   }
-  #memberPic {
-    width: 90%;
+  .member p {
+    padding-top: 3%;
   }
 }

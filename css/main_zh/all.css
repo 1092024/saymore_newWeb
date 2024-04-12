@@ -17,3 +17,77 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
 }
+
+/* 非看不可 */
+.special {
+  padding-top: 11%;
+  width: 80%;
+  height: 100%;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  margin: auto;
+  /* letter-spacing: 10px; */
+  line-height: 3em;
+  text-align: center;
+}
+
+.containerSP {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.specialIn {
+  padding-top: 5%;
+}
+.specialIn,
+.specialInTxtH,
+.specialInTxt {
+  display: flex;
+  gap: 10px;
+}
+
+.specialIn div,
+.specialInTxtH div,
+.specialInTxt div {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialIn img {
+  width: 20vw;
+}
+
+/* 宣傳片 */
+.saymorePush {
+  padding-top: 13%;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  margin: auto;
+}
+.saymorePush iframe {
+  padding-top: 7%;
+  width: 100%;
+  height: 70vh;
+}
+
+/* 成員介紹 */
+.member {
+  padding-top: 10%;
+  width: 80%;
+  height: 100%;
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐 */
+  margin: auto;
+  text-align: center;
+}
+#memberPic {
+  width: 90%;
+  margin-bottom: 5%;
+}

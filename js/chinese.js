@@ -1,13 +1,13 @@
 var frontAni = document.getElementById("frontAni");
 var gotoMenu = document.getElementById("gotoMenu");
-var buttonTarget = document.getElementById("buttonTarget");
-var toTop = document.getElementById("toTop");
-var btn1 = document.getElementById("btn1");
-var btn2 = document.getElementById("btn2");
-var btn3 = document.getElementById("btn3");
-var btn4 = document.getElementById("btn4");
 var introduce = document.getElementById("introduce");
-var member = document.getElementById("member");
+var toTop = document.getElementById("toTop");
+// var btn1 = document.getElementById("btn1");
+// var btn2 = document.getElementById("btn2");
+// var btn3 = document.getElementById("btn3");
+// var btn4 = document.getElementById("btn4");
+// var introduce = document.getElementById("introduce");
+// var member = document.getElementById("member");
 
 var windowWidth = window.innerWidth;
 var windowHeight = window.innerHeight;
@@ -30,7 +30,7 @@ frontAni.addEventListener("ended", () => {
 });
 
 gotoMenu.addEventListener("click", () => {
-  buttonTarget.scrollIntoView({ behavior: "smooth" });
+  introduce.scrollIntoView({ behavior: "smooth" });
 });
 
 toTop.addEventListener("click", () => {
@@ -45,18 +45,18 @@ window.addEventListener("scroll", function () {
   }
 });
 
-btn1.addEventListener("click", () => {
-  introduce.scrollIntoView({ behavior: "smooth" });
-});
+// btn1.addEventListener("click", () => {
+//   introduce.scrollIntoView({ behavior: "smooth" });
+// });
 
-btn2.addEventListener("click", () => {
-  window.location.href = "inkdrop.html";
-});
+// btn2.addEventListener("click", () => {
+//   window.location.href = "inkdrop.html";
+// });
 
-btn3.addEventListener("click", () => {
-  member.scrollIntoView({ behavior: "smooth" });
-});
+// btn3.addEventListener("click", () => {
+//   member.scrollIntoView({ behavior: "smooth" });
+// });
 
-btn4.addEventListener("click", () => {
-  window.location.href = "experience.html";
-});
+// btn4.addEventListener("click", () => {
+//   window.location.href = "experience.html";
+// });
