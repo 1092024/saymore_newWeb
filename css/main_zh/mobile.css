@@ -147,4 +147,13 @@
     padding-top: 3%;
     font-size: 14px;
   }
+  .menuOptions div {
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
 }

@@ -150,4 +150,13 @@
   .member p {
     padding-top: 3%;
   }
+  .menuOptions div {
+    position: absolute;
+    top: 50%;
+    right: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin: auto;
+  }
 }
