@@ -7,14 +7,16 @@
     position: relative;
   }
   #gotoMenu {
+    color: white;
     font-size: 20px;
     z-index: 0;
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     display: none;
     animation: txtShine 3s infinite;
+    letter-spacing: 6px;
   }
   #gotoMenu svg {
     margin-left: 20%;
@@ -25,17 +27,17 @@
   }
   @keyframes txtShine {
     0% {
-      color: black;
+      color: white;
       opacity: 1;
       text-shadow: 0 0 10px rgb(113, 113, 113);
     }
     50% {
-      color: rgb(117, 117, 117);
+      color: rgb(185, 185, 185);
       opacity: 0.7;
       text-shadow: 0 0 10px rgb(11, 11, 11);
     }
     100% {
-      color: black;
+      color: white;
       opacity: 1;
       text-shadow: 0 0 10px rgb(113, 113, 113);
     }
@@ -153,10 +155,11 @@
   .menuOptions div {
     position: absolute;
     top: 50%;
-    right: 45%;
+    right: 42.5%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     margin: auto;
+    letter-spacing: 10px;
   }
 }

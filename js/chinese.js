@@ -5,6 +5,8 @@ var toTop = document.getElementById("toTop");
 var menu = document.getElementById("menu");
 var menuAni = document.getElementById("menuAni");
 var menuOptions = document.getElementById("menuOptions");
+var optionMany = document.getElementById("optionMany");
+var paragraphs = optionMany.querySelectorAll("p");
 
 // var btn1 = document.getElementById("btn1");
 // var btn2 = document.getElementById("btn2");
@@ -23,23 +25,39 @@ var isPC = windowWidth > 992;
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if (isMobile) {
   menu.style.display = "block";
+  gotoMenu.style.display = "none";
+  frontAni.loop = true;
 }
 
 frontAni.addEventListener("ended", () => {
+  // if (isPC && !isMobile) {
+  //   frontAni.style.opacity = "0.4";
+  //   setTimeout(function () {
+  //     gotoMenu.style.display = "block";
+  //     menu.style.display = "block";
+  //   }, 2000);
+  // } else {
+  //   frontAni.style.opacity = "1";
+  // }
   if (isPC && !isMobile) {
-    frontAni.style.opacity = "0.3";
-    setTimeout(function () {
-      gotoMenu.style.display = "block";
-      menu.style.display = "block";
-    }, 2000);
-  } else {
-    frontAni.style.opacity = "1";
+    gotoMenu.style.display = "block";
   }
+
+  // menu.style.display = "block";
 });
+
+function fadeInParagraphs() {
+  paragraphs.forEach(function (paragraph, index) {
+    setTimeout(function () {
+      paragraph.classList.add("show");
+    }, index * 500);
+  });
+}
 
 menu.addEventListener("click", () => {
   gotoMenu.style.display = "none";
   menuOptions.style.display = "block";
+  fadeInParagraphs();
   document.body.style.overflow = "hidden";
   menuAni.style.display = "block";
   menuAni.play();
@@ -56,8 +74,10 @@ toTop.addEventListener("click", () => {
 window.addEventListener("scroll", function () {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     toTop.style.display = "block";
+    menu.style.display = "block";
   } else {
     toTop.style.display = "none";
+    menu.style.display = "none";
   }
 });
 

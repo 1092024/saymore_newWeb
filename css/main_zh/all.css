@@ -26,8 +26,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.3; /* 初始不透明度为1，即完全显示 */
-  transition: opacity 2s; /* 使用渐变动画过渡透明度 */
+  opacity: 0.2;
+  /* transition: opacity 2s;  */
 }
 
 /* chrome */
@@ -115,13 +115,25 @@ body {
 /* 選單 */
 .menu {
   position: fixed;
-  top: 3%;
-  right: 2%;
+  top: 2%;
+  right: 3%;
   z-index: 1;
   display: none;
 }
 .menu img {
   width: 3vw;
+  animation: imgShine 1.5s infinite;
+}
+@keyframes imgShine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .menu:hover {
   cursor: pointer;
@@ -144,6 +156,20 @@ body {
   position: fixed;
   z-index: 1;
   display: none;
+}
+#optionMany p {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+#optionMany p a {
+  color: white;
+  text-decoration: none;
+}
+#optionMany p:hover {
+  cursor: pointer;
+}
+#optionMany p.show {
+  opacity: 1;
 }
 
 .menuOptions div p {
