@@ -29,22 +29,22 @@ if (isMobile) {
   frontAni.loop = true;
 }
 
-frontAni.addEventListener("ended", () => {
-  // if (isPC && !isMobile) {
-  //   frontAni.style.opacity = "0.4";
-  //   setTimeout(function () {
-  //     gotoMenu.style.display = "block";
-  //     menu.style.display = "block";
-  //   }, 2000);
-  // } else {
-  //   frontAni.style.opacity = "1";
-  // }
-  if (isPC && !isMobile) {
-    gotoMenu.style.display = "block";
-  }
+// frontAni.addEventListener("ended", () => {
+//   // if (isPC && !isMobile) {
+//   //   frontAni.style.opacity = "0.4";
+//   //   setTimeout(function () {
+//   //     gotoMenu.style.display = "block";
+//   //     menu.style.display = "block";
+//   //   }, 2000);
+//   // } else {
+//   //   frontAni.style.opacity = "1";
+//   // }
+//   if (isPC && !isMobile) {
+//     gotoMenu.style.display = "block";
+//   }
 
-  // menu.style.display = "block";
-});
+//   // menu.style.display = "block";
+// });
 
 function fadeInParagraphs() {
   paragraphs.forEach(function (paragraph, index) {

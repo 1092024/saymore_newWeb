@@ -3,7 +3,7 @@ var txtEnter = document.getElementById("txtEnter");
 var chineseTxt = document.getElementById("chineseTxt");
 var engTxt = document.getElementById("engTxt");
 
-inkAni.playbackRate = 2.0;
+// inkAni.playbackRate = 2.0;
 
 setTimeout(function () {
   txtEnter.classList.add("show");
