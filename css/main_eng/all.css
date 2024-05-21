@@ -7,6 +7,28 @@
   font-weight: 200;
   font-style: normal;
 }
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#backgroundVD {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.2;
+  /* transition: opacity 2s;  */
+}
 
 /* chrome */
 body::-webkit-scrollbar {
@@ -18,28 +40,138 @@ body {
   -ms-overflow-style: none;
 }
 
-/* 作品介紹 */
-.introduce {
-  padding-top: 5%;
+/* 非看不可 */
+.special {
+  padding-top: 11%;
   width: 80%;
-  height: 100vh;
-  justify-content: center; /* 水平居中对齐 */
-  align-items: center; /* 垂直居中对齐 */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  letter-spacing: 4px;
-  line-height: 3em;
+  line-height: 2em;
+  text-align: center;
 }
+
+.containerSP {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.specialIn {
+  padding-top: 5%;
+}
+.specialIn,
+.specialInTxtH,
+.specialInTxt {
+  display: flex;
+  gap: 10px;
+}
+
+.specialIn div,
+.specialInTxtH div,
+.specialInTxt div {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.specialIn img {
+  width: 20vw;
+}
+
+/* 宣傳片 */
+.saymorePush {
+  padding-top: 13%;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.saymorePush iframe {
+  padding-top: 7%;
+  width: 100%;
+  height: 70vh;
+}
+
 /* 成員介紹 */
 .member {
-  padding-top: 5%;
+  padding-top: 10%;
   width: 80%;
-  height: 100vh;
-  justify-content: center; /* 水平居中对齐 */
-  align-items: center; /* 垂直居中对齐 */
+  height: 100%;
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  letter-spacing: 4px;
-  line-height: 3em;
+  text-align: center;
 }
 #memberPic {
-  width: 50%;
+  width: 90%;
+  margin-bottom: 5%;
+}
+/* 選單 */
+.menu {
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  z-index: 1;
+  display: none;
+}
+.menu img {
+  width: 3vw;
+  animation: imgShine 1.5s infinite;
+}
+@keyframes imgShine {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu:hover {
+  cursor: pointer;
+}
+#menuAni {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+  position: fixed;
+  z-index: 1;
+}
+.menuOptions {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+#optionMany p {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+#optionMany p a {
+  color: white;
+  text-decoration: none;
+}
+#optionMany p:hover {
+  cursor: pointer;
+}
+#optionMany p.show {
+  opacity: 1;
+}
+
+.menuOptions div p {
+  margin-top: 40%;
 }

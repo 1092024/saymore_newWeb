@@ -7,14 +7,16 @@
     position: relative;
   }
   #gotoMenu {
+    color: white;
     font-size: 20px;
     z-index: 0;
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
+    left: 53%;
+    transform: translate(-70%, -57.5%);
+    display: block;
     animation: txtShine 3s infinite;
+    letter-spacing: 6px;
   }
   #gotoMenu svg {
     margin-left: 20%;
@@ -25,17 +27,17 @@
   }
   @keyframes txtShine {
     0% {
-      color: black;
+      color: white;
       opacity: 1;
       text-shadow: 0 0 10px rgb(113, 113, 113);
     }
     50% {
-      color: rgb(117, 117, 117);
+      color: rgb(185, 185, 185);
       opacity: 0.7;
       text-shadow: 0 0 10px rgb(11, 11, 11);
     }
     100% {
-      color: black;
+      color: white;
       opacity: 1;
       text-shadow: 0 0 10px rgb(113, 113, 113);
     }
@@ -93,5 +95,71 @@
 
   #toTop:hover {
     cursor: pointer;
+  }
+  /* 作品介紹 */
+  .introduce {
+    padding-top: 5%;
+    width: 80%;
+    height: 100%;
+    justify-content: center; /* 水平居中对齐 */
+    align-items: center; /* 垂直居中对齐 */
+    margin: auto;
+    font-size: 16px;
+    letter-spacing: 6px;
+    line-height: 4em;
+  }
+  .fistHeader {
+    text-align: center;
+    color: rgb(65, 65, 138);
+    font-weight: bold;
+  }
+  #saymoreTxt {
+    font-size: 50px;
+    display: block;
+    padding-top: 2%;
+    padding-bottom: 1%;
+  }
+  #saymoreSlogan {
+    font-size: 30px;
+    display: block;
+    padding-top: 1%;
+    padding-bottom: 2%;
+  }
+  /* 非看不可 */
+  #specialTxt {
+    letter-spacing: 14px;
+    font-size: 50px;
+  }
+  #specialTxt3 {
+    padding: 0 1% 0 1%;
+    font-size: 110px;
+    color: rgb(133, 133, 133);
+  }
+  .specialInTxt {
+    padding-top: 1%;
+    letter-spacing: 14px;
+    font-size: 16px;
+  }
+  .specialInTxtH {
+    padding-top: 1%;
+    letter-spacing: 14px;
+    font-size: 30px;
+  }
+  /* 成員 */
+  .member {
+    letter-spacing: 14px;
+  }
+  .member p {
+    padding-top: 3%;
+  }
+  .menuOptions div {
+    position: absolute;
+    top: 50%;
+    right: 42.5%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    margin: auto;
+    letter-spacing: 10px;
   }
 }
